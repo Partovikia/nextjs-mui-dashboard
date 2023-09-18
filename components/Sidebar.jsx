@@ -4,6 +4,17 @@ import Image from "next/image";
 import { Box } from "@mui/material";
 import { ThemeProvider, Typography } from "@mui/material";
 import theme from "../components/Theme";
+import OtherHousesIcon from "@mui/icons-material/OtherHouses";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import LeaderboardOutlinedIcon from "@mui/icons-material/LeaderboardOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
+import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
+import MapsUgcRoundedIcon from "@mui/icons-material/MapsUgcRounded";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import GradeOutlinedIcon from "@mui/icons-material/GradeOutlined";
+import RestoreOutlinedIcon from "@mui/icons-material/RestoreOutlined";
+import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 
 const Sidebar = ({ children }) => {
   return (
@@ -36,81 +47,82 @@ const Sidebar = ({ children }) => {
                 borderRadius: ".25rem",
                 padding: "8px 5px",
                 m: "1rem 0",
+                alignItems: "center",
               }}
               className="bg-purple-800 text-white p-3 rounded-lg inline-block"
             >
               <Typography variant="h2">
-                {/* <RxSketchLogo size={20} /> */} Dashboard
+                <OtherHousesIcon /> Dashboard
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <RxDashboard size={20} /> */} Profile
+                <PersonOutlineIcon /> Profile
               </Typography>
             </Box>
           </Link>
           <Link href="/customers">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <RxPerson size={20} /> */} LeaderBoard
+                <LeaderboardOutlinedIcon /> LeaderBoard
               </Typography>
             </Box>
           </Link>
           <Link href="/orders">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <HiOutlineShoppingBag size={20} /> */} Order
+                <ShoppingCartOutlinedIcon /> Order
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <FiSettings size={20} /> */} Product
+                <ShoppingBagOutlinedIcon /> Product
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <FiSettings size={20} /> */} Sales Report
+                <ShowChartOutlinedIcon /> Sales Report
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <FiSettings size={20} /> */} Message
+                <MapsUgcRoundedIcon /> Message
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <FiSettings size={20} /> */} Settings
+                <SettingsOutlinedIcon /> Settings
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <FiSettings size={20} /> */} Favourite
+                <GradeOutlinedIcon /> Favourite
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <FiSettings size={20} /> */} History
+                <RestoreOutlinedIcon /> History
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
               <Typography variant="h2">
-                {/* <FiSettings size={20} /> */} Signout
+                <ExitToAppOutlinedIcon /> Signout
               </Typography>
             </Box>
           </Link>
