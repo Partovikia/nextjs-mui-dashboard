@@ -18,16 +18,28 @@ const theme = createTheme({
   typography: {
     h1: {
       fontSize: 20,
-      fontWeight: "600",
+      fontWeight: "500",
       fontFamily: "roboto",
       color: "#fff",
       letterSpacing: "1.05rem",
     },
     h2: {
-      fontSize: 18,
+      fontSize: 19,
+      fontWeight: "400",
+      fontFamily: "roboto",
+      letterSpacing: ".05rem",
+    },
+    h3: {
+      fontSize: 11,
       fontWeight: "500",
       fontFamily: "roboto",
       letterSpacing: ".05rem",
+    },
+    h6: {
+      fontSize: 15,
+      fontWeight: "700",
+      fontFamily: "roboto",
+      letterSpacing: ".06rem",
     },
   },
 });

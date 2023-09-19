@@ -1,21 +1,45 @@
 import { Box } from "@mui/material";
 import React from "react";
+import TextField from "@mui/material/TextField";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Profile from "./img/profile.jpg";
+import Content from "@/components/content";
 
 const Header = () => {
   return (
     <Box
       sx={{
-        width: "90%",
-        position: "relative",
-        left: "7%",
-        displey: "flex",
-        flexDirection: "row",
-        px: "4%",
+        width: "100%",
+        p: "1rem",
         justifyContent: "space-between",
+        background: "#171821",
+        color: "white",
       }}
     >
-      <h2>Dashboard</h2>
-      <h2>Welcome Back, User</h2>
+      <Box
+        component="form"
+        sx={{ display: "flex", justifyContent: "space-between" }}
+      >
+        <Box sx={{ width: "80%" }}>
+          <TextField
+            required
+            id="outlined-required"
+            defaultValue="Search Here..."
+            sx={{
+              width: "70%",
+              background: "#21222D",
+              borderRadius: "15px",
+            }}
+          />
+        </Box>
+        <Box>
+          <NotificationsNoneIcon />
+          <img src={Profile} />
+          <KeyboardArrowDownIcon />
+        </Box>
+      </Box>
+      <Content />
     </Box>
   );
 };

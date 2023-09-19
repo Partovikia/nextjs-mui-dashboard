@@ -21,15 +21,15 @@ const Sidebar = ({ children }) => {
     <Box sx={{ displey: "flex" }}>
       <Box
         sx={{
-          position: "fixed",
-          width: "10%",
+          width: "200px",
           height: "100vh",
           padding: "4px",
           background: "#171821",
           borderRight: "1px solid gray",
           display: "flex",
           justifyContent: "space-between",
-          gap: "1rem",
+          justifyContent: "center",
+          gap: "1.25rem",
         }}
       >
         <Box
@@ -44,91 +44,183 @@ const Sidebar = ({ children }) => {
               sx={{
                 background: "#A9DFD8",
                 color: "black",
-                borderRadius: ".25rem",
+                borderRadius: ".57rem",
                 padding: "8px 5px",
                 m: "1rem 0",
                 alignItems: "center",
               }}
-              className="bg-purple-800 text-white p-3 rounded-lg inline-block"
             >
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{ display: "flex", alignItems: "center", gap: "6px" }}
+              >
                 <OtherHousesIcon /> Dashboard
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <PersonOutlineIcon /> Profile
               </Typography>
             </Box>
           </Link>
           <Link href="/customers">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <LeaderboardOutlinedIcon /> LeaderBoard
               </Typography>
             </Box>
           </Link>
           <Link href="/orders">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <ShoppingCartOutlinedIcon /> Order
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <ShoppingBagOutlinedIcon /> Product
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <ShowChartOutlinedIcon /> Sales Report
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <MapsUgcRoundedIcon /> Message
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <SettingsOutlinedIcon /> Settings
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <GradeOutlinedIcon /> Favourite
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <RestoreOutlinedIcon /> History
               </Typography>
             </Box>
           </Link>
           <Link href="/">
             <Box sx={{ m: "1rem 0" }}>
-              <Typography variant="h2">
+              <Typography
+                variant="h2"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  color: "gray",
+                  m: "30px 0",
+                }}
+              >
                 <ExitToAppOutlinedIcon /> Signout
               </Typography>
             </Box>
           </Link>
         </Box>
       </Box>
-      <main className="ml-20 w-full">{children}</main>
+      {/* <main className="ml-20 w-full">{children}</main> */}
     </Box>
   );
 };

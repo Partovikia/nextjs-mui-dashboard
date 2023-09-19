@@ -8,9 +8,8 @@ export default function Home() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Box>
+        <Box sx={{ display: "flex", flexDirection: "row" }}>
           <Sidebar />
-
           <Header />
         </Box>
       </ThemeProvider>
