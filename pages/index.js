@@ -3,6 +3,7 @@ import Sidebar from "@/components/Sidebar";
 import { ThemeProvider } from "@mui/material";
 import theme from "../components/Theme";
 import Header from "@/components/Header";
+import Product from "@/components/Product";
 
 export default function Home() {
   return (

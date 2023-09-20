@@ -3,8 +3,9 @@ import React from "react";
 import TextField from "@mui/material/TextField";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import Profile from "./img/profile.jpg";
+import Profile from "./img/avatar.jpg";
 import Content from "@/components/content";
+import Avatar from "@mui/material/Avatar";
 
 const Header = () => {
   return (
@@ -33,9 +34,9 @@ const Header = () => {
             }}
           />
         </Box>
-        <Box>
+        <Box sx={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <NotificationsNoneIcon />
-          <img src={Profile} />
+          <Avatar alt="Remy Sharp" src={Profile} />
           <KeyboardArrowDownIcon />
         </Box>
       </Box>

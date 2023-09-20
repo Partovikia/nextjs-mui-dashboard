@@ -30,13 +30,13 @@ const theme = createTheme({
       letterSpacing: ".05rem",
     },
     h3: {
-      fontSize: 11,
+      fontSize: 16,
       fontWeight: "500",
       fontFamily: "roboto",
       letterSpacing: ".05rem",
     },
     h6: {
-      fontSize: 15,
+      fontSize: 14.5,
       fontWeight: "700",
       fontFamily: "roboto",
       letterSpacing: ".06rem",
