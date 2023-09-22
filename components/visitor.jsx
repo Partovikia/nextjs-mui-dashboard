@@ -1,18 +1,22 @@
+import data from "../data/data.js";
+import { Box } from "@mui/material";
+import { Line } from "react-chartjs-2";
+import { Chart as ChartJS } from "chart.js/auto";
 import React from "react";
-import { Typography, Box } from "@mui/material";
 
-function visitor() {
+function visitor({ VisitorChart }) {
   return (
     <Box
       sx={{
-        width: "50%",
         background: "#21222D",
         borderRadius: "20px",
+        height: "300px",
+        width: "756px",
         p: "5px",
         m: "5px",
       }}
     >
-      <Typography variant="h2">Visitor</Typography>
+      <Line data={VisitorChart} />;
     </Box>
   );
 }

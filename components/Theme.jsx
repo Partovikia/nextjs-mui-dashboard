@@ -17,11 +17,10 @@ const theme = createTheme({
   },
   typography: {
     h1: {
-      fontSize: 20,
-      fontWeight: "500",
+      fontSize: 24,
+      fontWeight: "600",
       fontFamily: "roboto",
       color: "#fff",
-      letterSpacing: "1.05rem",
     },
     h2: {
       fontSize: 19,

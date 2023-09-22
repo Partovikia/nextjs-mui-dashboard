@@ -38,16 +38,61 @@ const Content = () => {
       {
         label: "Last Month",
         data: [7000, 6000, 6800, 6900, 6600, 6800, 6900, 9000],
-        backgroundColor: "rgb(256, 223, 200, 1",
-        color: "rgb(256, 223, 200, 1",
+        backgroundColor: "rgba(78, 98, 102,0.9)",
+        borderColor: "rgba(78, 98, 102,0.9)",
+        color: "rgb(78, 98, 102)",
       },
       {
         label: "This Month",
         data: [2000, 4000, 5000, 1000, 1500, 1900, 2400, 6500],
-        backgroundColor: "rgb(169, 100, 216, 0.9",
-        color: "rgb(169, 100, 216, 0.9",
+        backgroundColor: "rgba(76, 70, 85,0.9)",
+        borderColor: "rgba(76, 70, 85,0.9)",
+        shadowOffsetY: 25,
+        color: "rgb(76, 70, 85)",
+        bordercolor: "rgb(76, 70, 85)",
       },
     ],
+  });
+
+  const [visitoData, VisitortData] = useState({
+    labels: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
+    datasets: [
+      {
+        label: "New Visitor",
+
+        data: [
+          3674, 7856, 5321, 9203, 4267, 6725, 2298, 5089, 3541, 6589, 4792,
+          8067,
+        ],
+        backgroundColor: "rgba(78, 98, 102,0.9)",
+        borderColor: "rgba(78, 98, 102,0.9)",
+        color: "rgb(78, 98, 102)",
+      },
+    ],
+
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+      title: "Visitor Insights",
+      Tooltip: {
+        shadowOffsetY: 5,
+        shadowBlur: 10,
+        shadowColor: "rgba(0, 0, 0, 0.5)",
+      },
+    },
   });
 
   const [chartOptions, setChartOptions] = useState({});
@@ -179,7 +224,7 @@ const Content = () => {
       </Box>
       <Box sx={{ display: "flex", gap: "1rem" }}>
         <Earning />
-        <Visitor />
+        <Visitor VisitorChart={visitoData} />
       </Box>
     </>
   );

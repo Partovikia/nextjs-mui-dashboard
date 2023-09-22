@@ -22,7 +22,7 @@ const Sidebar = ({ children }) => {
       <Box
         sx={{
           width: "200px",
-          height: "100vh",
+          height: "100%",
           padding: "4px",
           background: "#171821",
           borderRight: "1px solid gray",
