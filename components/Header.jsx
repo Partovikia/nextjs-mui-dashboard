@@ -4,8 +4,8 @@ import TextField from "@mui/material/TextField";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Profile from "./img/avatar.jpg";
+import Image from "next/image";
 import Content from "@/components/content";
-import Avatar from "@mui/material/Avatar";
 
 const Header = () => {
   return (
@@ -36,7 +36,12 @@ const Header = () => {
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <NotificationsNoneIcon />
-          <Avatar alt="Remy Sharp" src={Profile} />
+          <Image
+            width={50}
+            borderRadius= {50}
+            alt="Avatar Image"
+            src={Profile}
+          />
           <KeyboardArrowDownIcon />
         </Box>
       </Box>

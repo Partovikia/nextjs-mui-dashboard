@@ -29,7 +29,15 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 
 const Product = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        background: "#21222D",
+        borderRadius: "20px",
+        height: "376px",
+        p: "5px",
+        m: "5px",
+      }}
+    >
       {/* <h1>Recent Orders</h1>
       <ul>
         {data.map((order, id) => (
@@ -50,7 +58,7 @@ const Product = () => {
       </ul> */}
       <List
         sx={{
-          width: "56%",
+          width: "945px",
           borderRadius: "16px",
           m: "10px 0",
           p: "15px",
@@ -58,7 +66,7 @@ const Product = () => {
         }}
       >
         <Typography variant="h2">Top Product</Typography>
-        <ListItem alignItems="flex-start">
+        <ListItem alignItems="flex-start" sx={{ textAlign: "left" }}>
           <ListItemText primary="#" />
           <ListItemText primary="Name" />
           <ListItemText primary="Popularity" />
@@ -66,13 +74,16 @@ const Product = () => {
         </ListItem>
         <Divider variant="inset" component="li" />
         <ListItem alignItems="flex-start">
-          <ListItemText primary="01" />
-          <ListItemText primary="Home Decore Range" />
-          <ListItemText primary="Popularity" />
-          <ListItemText primary="Sales" />
+          <ListItemText primary="01" sx={{ textAlign: "left" }} />
+          <ListItemText
+            primary="Home Decore Range"
+            sx={{ textAlign: "left" }}
+          />
+          <ListItemText primary="Popularity" sx={{ textAlign: "left" }} />
+          <ListItemText primary="Sales" sx={{ textAlign: "left" }} />
         </ListItem>
         <Divider variant="inset" component="li" />
-        <ListItem alignItems="flex-start">
+        <ListItem alignItems="flex-start" sx={{ textAlign: "left" }}>
           <ListItemText primary="02" />
           <ListItemText primary="Disney Princess" />
           <ListItemText primary="Popularity" />
@@ -89,7 +100,7 @@ const Product = () => {
         <ListItem alignItems="flex-start">
           <ListItemText primary="04" />
           <ListItemText primary="Apple Smartwatch" />
-          <BorderLinearProgress variant="determinate" value={50} />
+          <ListItemText primary="Popularity" />
           <ListItemText primary="Sales" />
         </ListItem>
       </List>

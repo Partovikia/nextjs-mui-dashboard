@@ -6,6 +6,9 @@ import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import PersonAddAlt1OutlinedIcon from "@mui/icons-material/PersonAddAlt1Outlined";
 import Grid from "@mui/material";
 import { Bar } from "react-chartjs-2";
+import Earning from "./Earning";
+import Visitor from "./visitor";
+import FulFilment from "./fulfilment";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -29,6 +32,23 @@ const Content = () => {
   const [chartData, setChartData] = useState({
     datasets: [],
   });
+  const [customerData, setCustomerData] = useState({
+    labels: ["", "", "", "", "", "", "", ""],
+    datasets: [
+      {
+        label: "Last Month",
+        data: [7000, 6000, 6800, 6900, 6600, 6800, 6900, 9000],
+        backgroundColor: "rgb(256, 223, 200, 1",
+        color: "rgb(256, 223, 200, 1",
+      },
+      {
+        label: "This Month",
+        data: [2000, 4000, 5000, 1000, 1500, 1900, 2400, 6500],
+        backgroundColor: "rgb(169, 100, 216, 0.9",
+        color: "rgb(169, 100, 216, 0.9",
+      },
+    ],
+  });
 
   const [chartOptions, setChartOptions] = useState({});
 
@@ -42,6 +62,9 @@ const Content = () => {
           borderRadius: "5",
           backgroundColor: "rgb(169, 223, 216, 0.9",
         },
+        {
+          label: "Services",
+        },
       ],
     });
 
@@ -49,6 +72,7 @@ const Content = () => {
       plugins: {
         legend: {
           position: "bottom",
+          borderRadius: "50%",
         },
         title: {
           display: true,
@@ -149,8 +173,13 @@ const Content = () => {
           <Bar data={chartData} options={chartOptions} />
         </Box>
       </Box>
-      <Box>
+      <Box sx={{ display: "flex", gap: "1rem", width: "100%" }}>
         <Product />
+        <FulFilment CustomerChart={customerData} />
+      </Box>
+      <Box sx={{ display: "flex", gap: "1rem" }}>
+        <Earning />
+        <Visitor />
       </Box>
     </>
   );

@@ -36,7 +36,7 @@ const theme = createTheme({
       letterSpacing: ".05rem",
     },
     h6: {
-      fontSize: 14.5,
+      fontSize: 13.5,
       fontWeight: "700",
       fontFamily: "roboto",
       letterSpacing: ".06rem",
